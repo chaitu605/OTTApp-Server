@@ -2,7 +2,7 @@ const db = require("../models");
 const config = require("../config/auth.config");
 const { OAuth2Client } = require("google-auth-library");
 
-const client = new OAuth2Client(`${process.env.OAuth_Client}`);
+const client = new OAuth2Client(`${process.env.OAUTH_CLIENT}`);
 const User = db.user;
 const Roles = db.role;
 
